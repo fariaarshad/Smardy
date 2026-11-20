@@ -8,10 +8,10 @@ Smardy AI is a hybrid AI copywriting and viral hook studio built for creators an
 
 ## ✨ Key Features
 
-- **🧠 Instant Offline Draft Cleanup (`PREFER_ON_DEVICE`):** Removes filler words and polishes messy product descriptions or video scripts directly inside Chrome using Gemini Nano—even when Wi-Fi is completely off.
-- **🚀 Viral Marketing Hook Generator (`PREFER_IN_CLOUD`):** Generates 3 scroll-stopping marketing hooks (Contrarian, Curiosity Gap, and Pain-Point) powered by Google's Cloud Gemini models.
-- **🔒 Private Saved Hooks (Firestore + Anonymous Auth):** Silently signs users in with Firebase Anonymous Authentication so every visitor gets their own private, persistent list of saved hooks.
-- **🛡️ Protected with Firebase App Check:** Secures AI and database requests against unauthorized traffic.
+- **Instant Offline Draft Cleanup (`PREFER_ON_DEVICE`):** Removes filler words and polishes messy product descriptions or video scripts directly inside Chrome using Gemini Nano—even when Wi-Fi is completely off.
+- **Viral Marketing Hook Generator (`PREFER_IN_CLOUD`):** Generates 3 scroll-stopping marketing hooks (Contrarian, Curiosity Gap, and Pain-Point) powered by Google's Cloud Gemini models.
+- **Private Saved Hooks (Firestore + Anonymous Auth):** Silently signs users in with Firebase Anonymous Authentication so every visitor gets their own private, persistent list of saved hooks.
+- **Protected with Firebase App Check:** Secures AI and database requests against unauthorized traffic.
 
 ---
 

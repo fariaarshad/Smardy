@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import {
   initializeAppCheck,
-  ReCaptchaV3Provider,
+  ReCaptchaEnterpriseProvider,
 } from "firebase/app-check";
 import { getAI, getGenerativeModel, GoogleAIBackend, InferenceMode } from "firebase/ai";
 import { getFirestore } from "firebase/firestore";
@@ -19,13 +19,15 @@ const firebaseConfig = {
 
 // App Check debug token: lets you test on localhost and record your demo.
 // This line MUST run before initializeAppCheck.
-self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+if (window.location.hostname === "localhost") {
+  self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+}
 
 const app = initializeApp(firebaseConfig);
 
 initializeAppCheck(app, {
   // Paste the reCAPTCHA v3 site key from the App Check page in the Firebase console.
-  provider: new ReCaptchaV3Provider("6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"),
+  provider: new ReCaptchaEnterpriseProvider("6LdmayouAAAAAFwUHGWG9kElkcV6kZ7abotbHSPY"),
   isTokenAutoRefreshEnabled: true,
 });
 
